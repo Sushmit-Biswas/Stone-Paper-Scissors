@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors Game</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  </head>
+  <body>
+    <header>
+      <h1><i class="fas fa-hand-rock"></i> Rock Paper Scissors <i class="fas fa-hand-scissors"></i></h1>
+    </header>
+    <main>
+      <div class="game-container">
+        <div class="choices">
+          <div class="choice" id="rock">
+            <img src="./images/rock.png" alt="Rock" />
+          </div>
+          <div class="choice" id="paper">
+            <img src="./images/paper.png" alt="Paper" />
+          </div>
+          <div class="choice" id="scissors">
+            <img src="./images/scissors.png" alt="Scissors" />
+          </div>
+        </div>
+
+        <div class="score-board">
+          <div class="score player-score">
+            <p id="user-score">0</p>
+            <p>You</p>
+          </div>
+          <div class="vs">VS</div>
+          <div class="score computer-score">
+            <p id="comp-score">0</p>
+            <p>Computer</p>
+          </div>
+        </div>
+
+        <div class="msg-container">
+          <p id="msg">Choose your move!</p>
+        </div>
+
+        <div class="game-history">
+          <h2>Game History</h2>
+          <ul id="history-list"></ul>
+        </div>
+
+        <button id="reset-game" class="btn">Reset Game</button>
+      </div>
+
+      <aside class="game-stats">
+        <h2>Game Statistics</h2>
+        <div id="win-percentage"></div>
+        <div id="total-games"></div>
+      </aside>
+    </main>
+    <footer>
+      <p>&copy; 2024 Sushmit Biswas. All rights reserved.</p>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>
